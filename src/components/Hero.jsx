@@ -9,7 +9,7 @@ import {
   Image,
   Box,
 } from "@chakra-ui/react";
-import lockedImage from "@assets/locked.png";
+import BloodDonationImage from "@assets/BloodDonation.png";
 
 export default function CallToActionWithIllustration() {
   return (
@@ -62,7 +62,7 @@ export default function CallToActionWithIllustration() {
           </Button>
         </Stack>
         <Flex w={"full"} align={"center"} justify={"center"} pos={"relative"}>
-          <Image height={"80px"} src={lockedImage} />
+          <Image height={"120px"} src={BloodDonationImage} />
           <Box
             w={"80px"}
             h={"80px"}

@@ -12,8 +12,8 @@ import {
   PopoverTrigger,
   PopoverContent,
   useColorModeValue,
-  useBreakpointValue,
   useDisclosure,
+  Image,
 } from "@chakra-ui/react";
 import {
   HamburgerIcon,
@@ -21,16 +21,17 @@ import {
   ChevronDownIcon,
   ChevronRightIcon,
 } from "@chakra-ui/icons";
+import BloodDonationImage from "@assets/BloodDonation.png";
 
 export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-    <Box>
+    <Box position="fixed" w={"100%"} top={0} zIndex={"999"}>
       <Flex
-        bg={useColorModeValue("white", "gray.800")}
+        bg={"rgba(255, 255, 255, 0.9)"}
         color={useColorModeValue("gray.600", "white")}
-        minH={"60px"}
+        minH={"50px"}
         py={{ base: 2 }}
         px={{ base: 4 }}
         borderBottom={1}
@@ -53,13 +54,7 @@ export default function WithSubnavigation() {
           />
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
-          <Text
-            textAlign={useBreakpointValue({ base: "center", md: "left" })}
-            fontFamily={"heading"}
-            color={useColorModeValue("gray.800", "white")}
-          >
-            Logo
-          </Text>
+          <Image src={BloodDonationImage} height={"40px"} />
 
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
             <DesktopNav />
@@ -73,15 +68,6 @@ export default function WithSubnavigation() {
           spacing={6}
         >
           <Button
-            as={"a"}
-            fontSize={"sm"}
-            fontWeight={400}
-            variant={"link"}
-            href={"#"}
-          >
-            Sign In
-          </Button>
-          <Button
             display={{ base: "none", md: "inline-flex" }}
             fontSize={"sm"}
             fontWeight={600}
@@ -92,7 +78,7 @@ export default function WithSubnavigation() {
               bg: "pink.300",
             }}
           >
-            Sign Up
+            전자헌혈증 사용하기
           </Button>
         </Stack>
       </Flex>

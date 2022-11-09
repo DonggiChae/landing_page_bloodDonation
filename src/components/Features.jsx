@@ -6,7 +6,9 @@ import {
   Text,
   Heading,
   SimpleGrid,
+  Image,
 } from "@chakra-ui/react";
+import TeamGenesisImage from "@assets/TeamGenesis.png";
 
 export default function StatsGridWithImage() {
   return (
@@ -23,7 +25,11 @@ export default function StatsGridWithImage() {
         width={"50%"}
         insetY={0}
         right={0}
-      ></Flex>
+        alignItems={"center"}
+        justifyContent={"center"}
+      >
+        <Image src={TeamGenesisImage} maxH={"500px"} />
+      </Flex>
       <Container maxW={"7xl"} zIndex={10} position={"relative"}>
         <Stack direction={{ base: "column", lg: "row" }}>
           <Stack
@@ -79,12 +85,6 @@ export default function StatsGridWithImage() {
     </Box>
   );
 }
-
-const StatsText = ({ children }) => (
-  <Text as={"span"} fontWeight={700} color={"black"}>
-    {children}
-  </Text>
-);
 
 const stats = [
   {
