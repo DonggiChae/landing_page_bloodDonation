@@ -56,7 +56,7 @@ export default function WithSubnavigation() {
         <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
           <Image src={BloodDonationImage} height={"40px"} />
 
-          <Flex display={{ base: "none", md: "flex" }} ml={10}>
+          <Flex display={{ base: "none", md: "flex" }} ml={10} pt={2}>
             <DesktopNav />
           </Flex>
         </Flex>
@@ -105,7 +105,7 @@ const DesktopNav = () => {
                 p={2}
                 href={navItem.href ?? "#"}
                 fontSize={"sm"}
-                fontWeight={500}
+                fontWeight={700}
                 color={linkColor}
                 _hover={{
                   textDecoration: "none",
