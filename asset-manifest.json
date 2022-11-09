@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/landing_page_bloodDonation/static/css/main.94a77756.css",
-    "main.js": "/landing_page_bloodDonation/static/js/main.b8a92e59.js",
+    "main.js": "/landing_page_bloodDonation/static/js/main.7e1b5d80.js",
     "static/media/nanum-gothic-all-400-normal.woff": "/landing_page_bloodDonation/static/media/nanum-gothic-all-400-normal.c38c5ee946f4cd6bcfeb.woff",
+    "static/media/TeamGenesis.png": "/landing_page_bloodDonation/static/media/TeamGenesis.c341dabb73c051c18f6a.png",
     "static/media/nanum-gothic-65-400-normal.woff2": "/landing_page_bloodDonation/static/media/nanum-gothic-65-400-normal.f00aebbfdbc6c145fa79.woff2",
     "static/media/nanum-gothic-74-400-normal.woff2": "/landing_page_bloodDonation/static/media/nanum-gothic-74-400-normal.584c12ee6ea6f305b682.woff2",
     "static/media/nanum-gothic-79-400-normal.woff2": "/landing_page_bloodDonation/static/media/nanum-gothic-79-400-normal.59d6100fcbe01e09fa84.woff2",
@@ -63,7 +64,6 @@
     "static/media/nanum-gothic-27-400-normal.woff2": "/landing_page_bloodDonation/static/media/nanum-gothic-27-400-normal.66abb46b35e4916b3e95.woff2",
     "static/media/nanum-gothic-34-400-normal.woff2": "/landing_page_bloodDonation/static/media/nanum-gothic-34-400-normal.24153c2f59593c8b0256.woff2",
     "static/media/nanum-gothic-19-400-normal.woff2": "/landing_page_bloodDonation/static/media/nanum-gothic-19-400-normal.d5a917408c7b91a01f42.woff2",
-    "static/media/locked.png": "/landing_page_bloodDonation/static/media/locked.95f1fb4c7e3b101f69b8.png",
     "static/media/nanum-gothic-22-400-normal.woff2": "/landing_page_bloodDonation/static/media/nanum-gothic-22-400-normal.55984f4c1c0af12c7ff7.woff2",
     "static/media/nanum-gothic-29-400-normal.woff2": "/landing_page_bloodDonation/static/media/nanum-gothic-29-400-normal.cad50c047c43d263f4c7.woff2",
     "static/media/nanum-gothic-26-400-normal.woff2": "/landing_page_bloodDonation/static/media/nanum-gothic-26-400-normal.469974767401e8a7bb24.woff2",
@@ -124,6 +124,7 @@
     "static/media/nanum-gothic-41-400-normal.woff2": "/landing_page_bloodDonation/static/media/nanum-gothic-41-400-normal.79d7e49465740be2794f.woff2",
     "static/media/nanum-gothic-97-400-normal.woff2": "/landing_page_bloodDonation/static/media/nanum-gothic-97-400-normal.fe07befee2124768082c.woff2",
     "static/media/nanum-gothic-31-400-normal.woff2": "/landing_page_bloodDonation/static/media/nanum-gothic-31-400-normal.d383999bfc06f8cd927f.woff2",
+    "static/media/BloodDonation.png": "/landing_page_bloodDonation/static/media/BloodDonation.a2797446146cb2701e78.png",
     "static/media/nanum-gothic-99-400-normal.woff2": "/landing_page_bloodDonation/static/media/nanum-gothic-99-400-normal.e10320b12f4ae3cc6dbc.woff2",
     "static/media/nanum-gothic-98-400-normal.woff2": "/landing_page_bloodDonation/static/media/nanum-gothic-98-400-normal.4c17d021232d871f218d.woff2",
     "static/media/koho-thai-400-normal.woff2": "/landing_page_bloodDonation/static/media/koho-thai-400-normal.ad5d922ab4eb6e675af7.woff2",
@@ -131,10 +132,10 @@
     "static/media/koho-vietnamese-400-normal.woff2": "/landing_page_bloodDonation/static/media/koho-vietnamese-400-normal.88ace7cd00b34638fe9b.woff2",
     "index.html": "/landing_page_bloodDonation/index.html",
     "main.94a77756.css.map": "/landing_page_bloodDonation/static/css/main.94a77756.css.map",
-    "main.b8a92e59.js.map": "/landing_page_bloodDonation/static/js/main.b8a92e59.js.map"
+    "main.7e1b5d80.js.map": "/landing_page_bloodDonation/static/js/main.7e1b5d80.js.map"
   },
   "entrypoints": [
     "static/css/main.94a77756.css",
-    "static/js/main.b8a92e59.js"
+    "static/js/main.7e1b5d80.js"
   ]
 }
