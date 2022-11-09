@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/landing_page_bloodDonation/static/css/main.94a77756.css",
-    "main.js": "/landing_page_bloodDonation/static/js/main.7e1b5d80.js",
+    "main.js": "/landing_page_bloodDonation/static/js/main.7a2032af.js",
     "static/media/nanum-gothic-all-400-normal.woff": "/landing_page_bloodDonation/static/media/nanum-gothic-all-400-normal.c38c5ee946f4cd6bcfeb.woff",
     "static/media/TeamGenesis.png": "/landing_page_bloodDonation/static/media/TeamGenesis.c341dabb73c051c18f6a.png",
     "static/media/nanum-gothic-65-400-normal.woff2": "/landing_page_bloodDonation/static/media/nanum-gothic-65-400-normal.f00aebbfdbc6c145fa79.woff2",
@@ -132,10 +132,10 @@
     "static/media/koho-vietnamese-400-normal.woff2": "/landing_page_bloodDonation/static/media/koho-vietnamese-400-normal.88ace7cd00b34638fe9b.woff2",
     "index.html": "/landing_page_bloodDonation/index.html",
     "main.94a77756.css.map": "/landing_page_bloodDonation/static/css/main.94a77756.css.map",
-    "main.7e1b5d80.js.map": "/landing_page_bloodDonation/static/js/main.7e1b5d80.js.map"
+    "main.7a2032af.js.map": "/landing_page_bloodDonation/static/js/main.7a2032af.js.map"
   },
   "entrypoints": [
     "static/css/main.94a77756.css",
-    "static/js/main.7e1b5d80.js"
+    "static/js/main.7a2032af.js"
   ]
 }
