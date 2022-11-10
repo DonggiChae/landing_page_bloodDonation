@@ -23,7 +23,7 @@ import {
 } from "@chakra-ui/icons";
 import BloodDonationImage from "@assets/BloodDonation.png";
 
-export default function WithSubnavigation() {
+export default function NavBar({ currentVisibleIndex, onClickNavLink }) {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
@@ -57,7 +57,10 @@ export default function WithSubnavigation() {
           <Image src={BloodDonationImage} height={"40px"} />
 
           <Flex display={{ base: "none", md: "flex" }} ml={10} pt={2}>
-            <DesktopNav />
+            <DesktopNav
+              currentVisibleIndex={currentVisibleIndex}
+              onClickNavLink={onClickNavLink}
+            />
           </Flex>
         </Flex>
 
@@ -90,23 +93,23 @@ export default function WithSubnavigation() {
   );
 }
 
-const DesktopNav = () => {
+const DesktopNav = ({ currentVisibleIndex, onClickNavLink }) => {
   const linkColor = useColorModeValue("gray.600", "gray.200");
   const linkHoverColor = useColorModeValue("gray.800", "white");
   const popoverContentBgColor = useColorModeValue("white", "gray.800");
 
   return (
     <Stack direction={"row"} spacing={4}>
-      {NAV_ITEMS.map((navItem) => (
+      {NAV_ITEMS.map((navItem, index) => (
         <Box key={navItem.label}>
           <Popover trigger={"hover"} placement={"bottom-start"}>
             <PopoverTrigger>
               <Link
                 p={2}
-                href={navItem.href ?? "#"}
+                onClick={() => onClickNavLink(index)}
                 fontSize={"sm"}
                 fontWeight={700}
-                color={linkColor}
+                color={currentVisibleIndex === index ? "pink.400" : linkColor}
                 _hover={{
                   textDecoration: "none",
                   color: linkHoverColor,
@@ -116,7 +119,7 @@ const DesktopNav = () => {
               </Link>
             </PopoverTrigger>
 
-            {navItem.children && (
+            {/* {navItem.children && (
               <PopoverContent
                 border={0}
                 boxShadow={"xl"}
@@ -131,7 +134,7 @@ const DesktopNav = () => {
                   ))}
                 </Stack>
               </PopoverContent>
-            )}
+            )} */}
           </Popover>
         </Box>
       ))}
@@ -245,41 +248,15 @@ const MobileNavItem = ({ label, children, href }) => {
 
 const NAV_ITEMS = [
   {
-    label: "Inspiration",
-    children: [
-      {
-        label: "Explore Design Work",
-        subLabel: "Trending Design to inspire you",
-        href: "#",
-      },
-      {
-        label: "New & Noteworthy",
-        subLabel: "Up-and-coming Designers",
-        href: "#",
-      },
-    ],
+    label: "전자헌혈증",
   },
   {
-    label: "Find Work",
-    children: [
-      {
-        label: "Job Board",
-        subLabel: "Find your dream design job",
-        href: "#",
-      },
-      {
-        label: "Freelance Projects",
-        subLabel: "An exclusive list for contract work",
-        href: "#",
-      },
-    ],
+    label: "장점",
   },
   {
-    label: "Learn Design",
-    href: "#",
+    label: "블록체인 기술",
   },
   {
-    label: "Hire Designers",
-    href: "#",
+    label: "우리 회사는",
   },
 ];

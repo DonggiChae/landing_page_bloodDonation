@@ -9,10 +9,11 @@ import {
   Image,
 } from "@chakra-ui/react";
 import TeamGenesisImage from "@assets/TeamGenesis.png";
+import { forwardRef } from "react";
 
-export default function StatsGridWithImage() {
+const Features = forwardRef((props, ref) => {
   return (
-    <Box bg={"white"} position={"relative"} color={"black"}>
+    <Box bg={"white"} position={"relative"} color={"black"} ref={ref}>
       <Flex
         flex={1}
         zIndex={0}
@@ -84,7 +85,9 @@ export default function StatsGridWithImage() {
       </Container>
     </Box>
   );
-}
+});
+
+export default Features;
 
 const stats = [
   {

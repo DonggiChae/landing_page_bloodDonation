@@ -10,10 +10,11 @@ import {
   Box,
 } from "@chakra-ui/react";
 import BloodDonationImage from "@assets/BloodDonation.png";
+import { forwardRef } from "react";
 
-export default function CallToActionWithIllustration() {
+const Hero = forwardRef((props, ref) => {
   return (
-    <Container maxW={"5xl"}>
+    <Container maxW={"5xl"} ref={ref}>
       <Stack
         textAlign={"center"}
         align={"center"}
@@ -75,7 +76,9 @@ export default function CallToActionWithIllustration() {
       </Stack>
     </Container>
   );
-}
+});
+
+export default Hero;
 
 export const Illustration = (props) => {
   return (

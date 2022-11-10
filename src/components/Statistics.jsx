@@ -7,6 +7,7 @@ import {
   StatNumber,
   useColorModeValue,
 } from "@chakra-ui/react";
+import { forwardRef } from "react";
 
 function StatsCard(props) {
   const { title, stat } = props;
@@ -27,9 +28,16 @@ function StatsCard(props) {
   );
 }
 
-export default function BasicStatistics() {
+const Statistics = forwardRef((props, ref) => {
   return (
-    <Box maxW="7xl" mx={"auto"} pt={5} pb={28} px={{ base: 2, sm: 12, md: 17 }}>
+    <Box
+      maxW="7xl"
+      mx={"auto"}
+      pt={28}
+      pb={48}
+      px={{ base: 2, sm: 12, md: 17 }}
+      ref={ref}
+    >
       <chakra.h1
         textAlign={"center"}
         fontSize={"4xl"}
@@ -45,4 +53,6 @@ export default function BasicStatistics() {
       </SimpleGrid>
     </Box>
   );
-}
+});
+
+export default Statistics;

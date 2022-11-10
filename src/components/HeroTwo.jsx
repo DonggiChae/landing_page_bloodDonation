@@ -1,5 +1,6 @@
 import { Box, SimpleGrid, Icon, Text, Stack, Flex } from "@chakra-ui/react";
 import { FcSearch, FcDonate, FcLock } from "react-icons/fc";
+import { forwardRef } from "react";
 
 const Feature = ({ title, text, icon }) => {
   return (
@@ -24,9 +25,9 @@ const Feature = ({ title, text, icon }) => {
   );
 };
 
-export default function SimpleThreeColumns() {
+const HeroTwo = forwardRef((props, ref) => {
   return (
-    <Box p={60}>
+    <Box p={4} my={28} ref={ref}>
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
         <Feature
           icon={<Icon as={FcSearch} w={10} h={10} />}
@@ -46,4 +47,6 @@ export default function SimpleThreeColumns() {
       </SimpleGrid>
     </Box>
   );
-}
+});
+
+export default HeroTwo;
