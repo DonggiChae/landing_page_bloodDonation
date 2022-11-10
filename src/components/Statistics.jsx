@@ -19,9 +19,7 @@ function StatsCard(props) {
       borderColor={useColorModeValue("gray.800", "gray.500")}
       rounded={"lg"}
     >
-      <StatLabel fontWeight={"medium"} isTruncated>
-        {title}
-      </StatLabel>
+      <StatLabel fontWeight={"medium"}>{title}</StatLabel>
       <StatNumber fontSize={"2xl"} fontWeight={"medium"}>
         {stat}
       </StatNumber>
