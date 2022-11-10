@@ -2,7 +2,6 @@
   "name": "react-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://chaedonggi.github.io/landing_page_bloodDonation",
   "dependencies": {
     "@chakra-ui/icons": "^2.0.11",
     "@chakra-ui/react": "^2.3.7",
